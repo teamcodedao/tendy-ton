@@ -9,7 +9,7 @@ declare global {
       NEXT_PUBLIC_TWITTER_URL: string;
       NEXT_PUBLIC_TELEGRAM_URL: string;
       NEXT_PUBLIC_DEX_URL: string;
-      NEXT_PUBLIC_DEDUST_URL: string;
+      NEXT_PUBLIC_DEXS_URL: string;
     }
   }
 }

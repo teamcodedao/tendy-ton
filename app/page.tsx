@@ -6,6 +6,7 @@ import Nav from './nav';
 import Socials from './socials';
 import Hamburger from './hamburger';
 import Hero from './hero';
+import Chart from './chart';
 
 import logoImg from './logo.png';
 
@@ -39,6 +40,10 @@ export default function Home() {
           </header>
 
           <Hero />
+
+          <div className='mt-40 px-5 max-[840px]:mt-16 sm:px-0 2xl:mt-36'>
+            <Chart />
+          </div>
         </main>
       </div>
     </div>
