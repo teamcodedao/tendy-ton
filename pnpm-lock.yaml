@@ -11,6 +11,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      framer-motion:
+        specifier: ^11.2.13
+        version: 11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       hamburger-react:
         specifier: ^2.5.1
         version: 2.5.1(react@18.3.1)
@@ -23,6 +26,12 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
+      react-flip-tilt:
+        specifier: ^0.2.0
+        version: 0.2.0(framer-motion@11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-next-tilt:
+        specifier: ^0.4.3
+        version: 0.4.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-portal:
         specifier: ^4.2.2
         version: 4.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -697,6 +706,20 @@ packages:
     resolution: {integrity: sha512-PXUUyLqrR2XCWICfv6ukppP96sdFwWbNEnfEMt7jNsISjMsvaLNinAHNDYyvkyU+SZG2BTSbT5NjG+vZslfGTA==}
     engines: {node: '>=14'}
 
+  framer-motion@11.2.13:
+    resolution: {integrity: sha512-AyIeegfkXlkX1lWEudRYsJlC+0A59cE8oFK9IsN9bUQzxLwcvN3AEaYaznkELiWlHC7a0eD7pxsYQo7BC05S5A==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
@@ -1258,8 +1281,27 @@ packages:
     peerDependencies:
       react: ^18.3.1
 
+  react-flip-tilt@0.2.0:
+    resolution: {integrity: sha512-lqSVsKWBsdTljFSrSEllkE+MrKKIcBBgqHAS2XKO/7Wv3bmfjgwp5FUgDfWdvAEOjfpT95QPVRfaAWZRsGNCjQ==}
+    peerDependencies:
+      framer-motion: '>= 10.0 || ^10.15.2'
+      react: '>= 16.8 || ^18.2.0'
+      react-dom: '>= 16.8 || ^18.2.0'
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react-next-parallax@0.1.0:
+    resolution: {integrity: sha512-cRSDAW3LRUNpPjc2oYlAWZhIuHvgK/2UpmOpT1BV+sE7OgX7H7SPLjkzpje8AWOf8HCW8S3FFDpEyG/i8YhidA==}
+    peerDependencies:
+      react: '>= 16.8 || ^18.2.0'
+      react-dom: '>= 16.8 || ^18.2.0'
+
+  react-next-tilt@0.4.3:
+    resolution: {integrity: sha512-zvvYa0g1xRGEAE2q7HHbQ68NCShrbhsKkczQ2IsoQulgXxbEIN9GILzGv4KvqvvCN/cZlSv8k9phpsG27RmSoQ==}
+    peerDependencies:
+      react: '>= 16.8 || ^18.2.0'
+      react-dom: '>= 16.8 || ^18.2.0'
 
   react-portal@4.2.2:
     resolution: {integrity: sha512-vS18idTmevQxyQpnde0Td6ZcUlv+pD8GTyR42n3CHUQq9OHi1C4jDE4ZWEbEsrbrLRhSECYiao58cvocwMtP7Q==}
@@ -2397,6 +2439,13 @@ snapshots:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
 
+  framer-motion@11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      tslib: 2.6.3
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   fs.realpath@1.0.0: {}
 
   fsevents@2.3.3:
@@ -2950,7 +2999,26 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
+  react-flip-tilt@0.2.0(framer-motion@11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      framer-motion: 11.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-next-parallax: 0.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-next-tilt: 0.4.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
   react-is@16.13.1: {}
+
+  react-next-parallax@0.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-next-tilt: 0.4.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+
+  react-next-tilt@0.4.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-portal@4.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:

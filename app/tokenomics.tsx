@@ -1,4 +1,7 @@
+'use client';
+
 import clsx from 'clsx';
+import {FlipTilt} from 'react-flip-tilt';
 
 export default function Tokenomics() {
   return (
@@ -27,11 +30,19 @@ export default function Tokenomics() {
             <span>1.000.000.000</span>
           </div>
         </div>
-        <img
-          src='/coin.png'
-          alt=''
-          className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 self-center opacity-25 lg:multi-[`static;opacity-100;w-[300px];shrink-0;object-contain;lg:w-[400px];2xl:w-[505px];-translate-x-0;-translate-y-0`]'
-        />
+        <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 self-center opacity-25 lg:multi-[`static;opacity-100;w-[300px];shrink-0;object-contain;lg:w-[400px];2xl:w-[505px];-translate-x-0;-translate-y-0`]'>
+          <FlipTilt
+            front={<img src='/coin.png' alt='' />}
+            back={
+              <div>
+                <img src='/coin.png' alt='' />
+              </div>
+            }
+            borderWidth='0px'
+            shadowEnable={false}
+            flipBackReverse
+          ></FlipTilt>
+        </div>
       </div>
     </div>
   );

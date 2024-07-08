@@ -1,8 +1,11 @@
+'use client';
+
 import Image from 'next/image';
+import clsx from 'clsx';
+import {Tilt} from 'react-next-tilt';
 
 import dexsImg from './dexs.png';
 import dexImg from './dex.png';
-import clsx from 'clsx';
 
 export default function Chart() {
   return (
@@ -20,14 +23,18 @@ export default function Chart() {
           target='_dexs'
           className='self-stretch bg-black'
         >
-          <Image src={dexsImg} quality={100} alt='' />
+          <Tilt>
+            <Image src={dexsImg} quality={100} alt='' />
+          </Tilt>
         </a>
         <a
           href={process.env.NEXT_PUBLIC_DEX_URL}
           target='_dex'
           className='bg-[#43E5FB]'
         >
-          <Image src={dexImg} quality={100} alt='' />
+          <Tilt>
+            <Image src={dexImg} quality={100} alt='' />
+          </Tilt>
         </a>
       </div>
     </div>
