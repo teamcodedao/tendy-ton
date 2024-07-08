@@ -5,6 +5,7 @@ import Background from './background';
 import Nav from './nav';
 import Socials from './socials';
 import Hamburger from './hamburger';
+import Hero from './hero';
 
 import logoImg from './logo.png';
 
@@ -36,6 +37,8 @@ export default function Home() {
             </div>
             <Socials />
           </header>
+
+          <Hero />
         </main>
       </div>
     </div>
