@@ -7,6 +7,7 @@ import Socials from './socials';
 import Hamburger from './hamburger';
 import Hero from './hero';
 import Chart from './chart';
+import Tokenomics from './tokenomics';
 
 import logoImg from './logo.png';
 
@@ -43,6 +44,10 @@ export default function Home() {
 
           <div className='mt-40 px-5 max-[840px]:mt-16 sm:px-0 2xl:mt-36'>
             <Chart />
+          </div>
+
+          <div className='mt-20 px-5 sm:px-0 xl:mt-40'>
+            <Tokenomics />
           </div>
         </main>
       </div>
