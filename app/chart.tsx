@@ -6,7 +6,7 @@ import clsx from 'clsx';
 
 export default function Chart() {
   return (
-    <div>
+    <div id='chart'>
       <h2 className='text-leading'>VIEW CHART ON</h2>
       <div
         className={clsx(

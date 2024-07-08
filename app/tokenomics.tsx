@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 export default function Tokenomics() {
   return (
-    <div>
+    <div id='tokenomics'>
       <h2 className='text-leading'>Tokenomics</h2>
       <div className='relative mt-10 flex justify-center gap-x-10 sm:mt-14 lg:mt-24 lg:gap-x-20'>
         <div

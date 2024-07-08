@@ -16,8 +16,11 @@ export default function Home() {
     <div className='relative h-fit'>
       <Background />
       <div className='relative min-h-screen px-0 sm:px-5 xl:px-10'>
-        <main className='mx-auto max-w-screen-2xl'>
-          <header className='flex items-end justify-between gap-x-5 sm:gap-x-10'>
+        <main className='mx-auto max-w-screen-2xl pb-5'>
+          <header
+            id='home'
+            className='flex items-end justify-between gap-x-5 sm:gap-x-10'
+          >
             <div
               className={clsx(
                 'flex shrink-0 items-end text-2xl text-white lg:text-3xl xl:text-[40px]',
