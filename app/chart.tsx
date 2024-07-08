@@ -11,7 +11,8 @@ export default function Chart() {
       <div
         className={clsx(
           'mt-10 flex justify-center gap-x-5 *:multi-[`rounded-2xl;border-2;border-[#FFFBFB];overflow-hidden`] sm:mt-14 sm:gap-x-10 md:gap-x-20 lg:mt-24 lg:gap-x-28',
-          '[&_img]:multi-[w-full;max-w-[567px];object-cover;object-center]'
+          '[&_img]:multi-[w-full;max-w-[567px];object-cover;object-center]',
+          'max-sm:*:flex-1'
         )}
       >
         <a

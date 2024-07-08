@@ -27,6 +27,6 @@ body {
   }
 
   .text-leading {
-    @apply text-white uppercase text-center text-5xl sm:text-6xl lg:text-7xl xl:text-8xl [-webkit-text-stroke:1px_black];
+    @apply text-white uppercase text-center text-5xl sm:text-6xl lg:text-7xl xl:text-8xl break-all [-webkit-text-stroke:1px_black];
   }
 }

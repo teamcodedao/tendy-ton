@@ -8,8 +8,9 @@ const font = Slackey({
 });
 
 export const metadata: Metadata = {
-  title: 'Tendy',
-  description: 'Tendy',
+  title: 'DOG BY MATT FURIE',
+  description:
+    "TENDY - Inspired by a based Matt Furie character came to conquer Dog Meta on TON. The next banger to the 'Matt Furie Club'",
 };
 
 export default function RootLayout({
