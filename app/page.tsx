@@ -19,12 +19,12 @@ export default function Home() {
         <main className='mx-auto max-w-screen-2xl pb-5'>
           <header
             id='home'
-            className='flex items-end justify-between gap-x-5 sm:gap-x-10'
+            className='flex items-end justify-between gap-x-5 pt-2 sm:gap-x-10'
           >
             <div
               className={clsx(
                 'flex shrink-0 items-end text-2xl text-white lg:text-3xl xl:text-[40px]',
-                'max-[840px]:multi-[`text-4xl;[&_img]:w-[70px]`]'
+                'max-[840px]:multi-[`ml-5;text-4xl;[&_img]:w-[70px]`]'
               )}
             >
               <Image
@@ -32,9 +32,9 @@ export default function Home() {
                 priority
                 quality={100}
                 alt=''
-                className='w-[80px] xl:w-[103px]'
+                className='w-[60px] xl:w-[80px]'
               />
-              <span className='max-[430px]:hidden'>TENDY</span>
+              <span className='ml-3 max-[430px]:hidden'>TENDY</span>
             </div>
             <Nav className='max-[840px]:hidden' />
             <div className='order-4 mr-5 hidden max-[850px]:multi-[`block;[&+div]:ml-auto`]'>

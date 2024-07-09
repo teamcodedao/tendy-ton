@@ -8,13 +8,13 @@ import logoImg from './logo.png';
 export default function Hero() {
   return (
     <div className='mt-10 flex items-center gap-x-10 2xl:gap-x-0'>
-      <div className='flex grow flex-col justify-center max-[850px]:hidden'>
+      <div className='flex grow flex-col items-center justify-center max-[850px]:hidden'>
         <Image
           src={logoImg}
           priority
           quality={100}
           alt=''
-          className='w-full max-w-[min(100%,700px)] object-contain'
+          className='w-full max-w-[min(100%,560px)] object-contain'
         />
         <Buy />
       </div>
